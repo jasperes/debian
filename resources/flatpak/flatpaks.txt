@@ -1,0 +1,23 @@
+com.github.tchx84.Flatseal
+com.usebottles.bottles
+com.valvesoftware.Steam
+org.freedesktop.Platform.VulkanLayer.MangoHud
+io.mrarm.mcpelauncher
+net.rpcs3.RPCS3
+com.discordapp.Discord
+org.videolan.VLC
+com.spotify.Client
+org.remmina.Remmina
+org.filezillaproject.Filezilla
+io.dbeaver.DBeaverCommunity
+com.usebruno.Bruno
+com.visualstudio.code
+com.jetbrains.IntelliJ-IDEA-Community
+org.gimp.GIMP
+org.libreoffice.LibreOffice
+flathub org.gnome.gThumb
+org.jdownloader.JDownloader
+org.qbittorrent.qBittorrent
+io.gitlab.librewolf-community
+org.mozilla.firefox
+com.google.Chrome

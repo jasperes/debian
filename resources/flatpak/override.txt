@@ -1,0 +1,24 @@
+# filesystem
+filesystem;~/.themes/Dracula;
+filesystem;~/.icons/Dracula;
+filesystem;~/.icons/Dracula-cursors;
+filesystem;~/.config/assets;
+filesystem;~/.config/gtk-2.0/Dracula;
+filesystem;~/.config/gtk-3.0/Dracula;
+filesystem;~/.config/gtk-3.20/Dracula;
+filesystem;~/.config/gtk-4.0/Dracula;
+filesystem;~/.config/gtk-4.0/gtk.css;
+filesystem;~/.config/gtk-4.0/gtk-dark.css;
+filesystem;~/.local/share/icons/Dracula;
+filesystem;~/.local/share/icons/Dracula-cursors;
+filesystem;~/.local/share/aurorae/themes/Dracula;
+filesystem;~/.local/share/color-schemes/Dracula.colors;
+filesystem;~/.local/share/plasma/desktoptheme/Dracula;
+filesystem;~/.local/share/plasma/look-and-feel/Dracula-kde5;
+filesystem;~/.local/share/plasma/look-and-feel/Dracula-kde6;
+
+# env
+env;ICON_THEME=Dracula;
+env;GTK_THEME=Dracula;
+env;XCURSOR_THEME=Dracula-cursors;
+env;MANGOHUD=1;com.valvesoftware.Steam;

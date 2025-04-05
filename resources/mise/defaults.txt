@@ -1,0 +1,6 @@
+usage
+node@20
+python@3.13
+npm:yarn
+nerdctl
+powershell-core
