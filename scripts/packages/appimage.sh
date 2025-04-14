@@ -3,7 +3,7 @@
 appimage_packages_git() {
     set -e
 
-    APPS_LIST="${RESOURCES}/appimage/images-git.txt"
+    APPS_LIST="${RESOURCES}/appimage/images.pkg.git.csv"
 
     mkdir -p $APPIMAGE_FOLDER
 
@@ -41,7 +41,7 @@ appimage_packages_git() {
 appimage_packages_link() {
     set -e
 
-    APPS_LIST="${RESOURCES}/appimage/images-links.txt"
+    APPS_LIST="${RESOURCES}/appimage/images.pkg.link.csv"
 
     mkdir -p $APPIMAGE_FOLDER
 

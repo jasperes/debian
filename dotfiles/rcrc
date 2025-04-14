@@ -1,0 +1,14 @@
+# https://thoughtbot.github.io/rcm/rcrc.5.html
+#
+# COPY_ALWAYS="ssh/id_* weechat/* netrc"
+# COPY_ALWAYS="*"
+# DOTFILES_DIRS="/home/mike/.dotfiles /usr/share/dotfiles"
+# EXCLUDES="irbrc *:*emacs* dotfiles:python*"
+# HOSTNAME="eggplant"
+# TAGS="freebsd development email git laptop gmail notmuch"
+# SYMLINK_DIRS="zprezto texmf"
+# UNDOTTED="texmf"
+# ###
+
+DOTFILES_DIRS="~/Sources/jasperes/debian/dotfiles"
+COPY_ALWAYS="var/app/com.valvesoftware.Steam/*"

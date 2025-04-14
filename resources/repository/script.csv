@@ -1,0 +1,4 @@
+# name; link; shell;
+ohmyzsh;https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh;sh;
+ohmyposh;https://ohmyposh.dev/install.sh;bash;
+mise;https://mise.run;sh;

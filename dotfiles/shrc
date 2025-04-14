@@ -1,0 +1,43 @@
+# ======================== VARIABLES ======================== #
+
+SHELL_NAME="$(ps -p $$ -o 'comm=')"
+
+# ======================== PATH ======================== #
+
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+# ======================== ALIAS ======================== #
+
+# vim
+alias vim="nvim"
+
+# sudo
+alias sudo="sudo env PATH=$PATH "
+
+# ======================== FUNCTIONS ======================== #
+
+# update all
+upall() {
+    rcup -v &&
+    omz update &&
+    zplug update &&
+    mise self-update -y &&
+    flatpak update && flatpak uninstall --unused &&
+    sudo apt update && sudo apt upgrade && sudo apt autoremove &&
+    echo All Done
+}
+
+# ======================== IMPORTS ======================== #
+
+# mise
+command -v mise > /dev/null && source <(mise activate $SHELL_NAME)
+command -v mise > /dev/null && source <(mise completion $SHELL_NAME)
+
+# kubectl
+command -v kubectl > /dev/null && source <(kubectl completion $SHELL_NAME)

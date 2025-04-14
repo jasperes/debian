@@ -1,0 +1,7 @@
+[tools]
+"asdf:nerdctl" = "latest"
+"asdf:powershell-core" = "latest"
+"asdf:usage" = "latest"
+"core:node" = "20"
+"core:python" = "3.13"
+"npm:yarn" = "latest"

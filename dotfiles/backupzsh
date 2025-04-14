@@ -1,0 +1,54 @@
+# ======================== COMPLETIONS ======================== #
+
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+
+# ======================== IMPORTS ======================== #
+
+source ~/.shrc
+for x in $(ls ~/ -a | grep '.zshrc.'); do source "$x"; done
+
+# ======================== VARIABLES ======================== #
+
+# dracula zsh theme
+#export DRACULA_DISPLAY_GIT=0
+export DRACULA_DISPLAY_TIME=1
+#export DRACULA_TIME_FORMAT="%-H:%M"
+export DRACULA_DISPLAY_NEW_LINE=1
+#export DRACULA_ARROW_ICON="-> "
+#export DRACULA_DISPLAY_FULL_CWD=1
+export DRACULA_DISPLAY_CONTEXT=0
+
+# ======================== ZPLUG ======================== #
+
+source ~/.zplug/init.zsh
+
+zplug 'dracula/zsh', as:theme
+zplug 'zsh-users/zsh-syntax-highlighting', as:plugin
+zplug 'marlonrichert/zsh-autocomplete', as:plugin
+zplug 'zsh-users/zsh-completions', as:plugin
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+zplug load #--verbose
+
+# ======================== OH MY ZSH ======================== #
+
+export ZSH="$HOME/.oh-my-zsh"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
+
+# ======================== CONFIG ======================== #
+
+# Turn off all beeps
+unsetopt BEEP
+# Turn off autocomplete beeps
+unsetopt LIST_BEEP

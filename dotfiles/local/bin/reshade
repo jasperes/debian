@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+( cd ~/.local/opt/reshade/ && bash ./reshade-linux-flatpak.sh )

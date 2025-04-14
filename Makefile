@@ -34,6 +34,10 @@ swapfile/setup: ##@ configure swapfile
 	@source $(SCRIPTS)/core/swapfile.sh
 	swapfile_setup
 
+shell/setup: ##@ configure shell terminal
+	@source $(SCRIPTS)/core/shell.sh
+	shell_setup
+
 ##@
 ##@ packages
 ##@
@@ -42,13 +46,9 @@ apt/packages: ##@ install apt packages
 	@source $(SCRIPTS)/packages/apt.sh
 	apt_packages
 
-homebrew/installer: ##@ install homebrew manager
-	@source $(SCRIPTS)/packages/homebrew.sh
-	homebrew_installer
-
-homebrew/packages: ##@ install homebrew packages
-	@source $(SCRIPTS)/packages/homebrew.sh
-	homebrew_packages
+deb/packages: ##@ install deb packages
+	@source $(SCRIPTS)/packages/deb.sh
+	deb_packages
 
 flatpak/packages: ##@ install flatpak packages
 	@source $(SCRIPTS)/packages/flatpak.sh
@@ -62,57 +62,41 @@ appimage/packages: ##@ install appimage packages
 	@source $(SCRIPTS)/packages/appimage.sh
 	appimage_packages
 
-mise/installer: ##@ install mise
-	@source $(SCRIPTS)/packages/mise.sh
-	mise_installer
+git/clone: ##@ clone git projects
+	@source $(SCRIPTS)/packages/git.sh
+	git_clone
 
-mise/packages: ##@ install mise packages
-	@source $(SCRIPTS)/packages/mise.sh
-	mise_packages
+git/update: ##@ update git projects
+	@source $(SCRIPTS)/packages/git.sh
+	git_update
+
+script/packages: ##@ install programs from script
+	@source $(SCRIPTS)/packages/script.sh
+	script_packages
 
 ##@
 ##@ dotfiles
 ##@
 
-rcm/setup: ##@ configure rcm
+rcm/setup: ##@ configure dotfiles
 	@source $(SCRIPTS)/dotfiles/rcm.sh
 	rcm_setup
-
-##@
-##@ shell
-##@
-
-ohmyzsh/installer: ##@ install oh my zshell
-	@source $(SCRIPTS)/shell/ohmyzsh.sh
-	ohmyzsh_installer
-
-shell/setup: ##@ configure shell terminal
-	@source $(SCRIPTS)/shell/shell.sh
-	shell_setup
 
 ##@
 ##@ softwares
 ##@
 
-docker/installer: ##@ install docker
-	@source $(SCRIPTS)/softwares/docker.sh
-	docker_installer
+mise/packages: ##@ install mise packages
+	@source $(SCRIPTS)/softwares/mise.sh
+	mise_packages
 
 vscode/extensions: ##@ install vscode extensions
 	@source $(SCRIPTS)/softwares/vscode.sh
 	vscode_extensions
 
-powershell/installer: ##@ install powershell
-	@source $(SCRIPTS)/softwares/powershell.sh
-	powershell_installer
-
-amdgputop/installer: ##@ install amdgpu_top
-	@source $(SCRIPTS)/softwares/amdgputop.sh
-	amdgputop_installer
-
-wallpaper-engine/kde/installer: ##@ install wallpaper engine for kde
-	@source $(SCRIPTS)/softwares/wallpaper-engine.sh
-	wallpaper_engine_kde_installer
+powershell/modules: ##@ install powershell modules
+	@source $(SCRIPTS)/softwares/pwsh.sh
+	powershell_modules
 
 ##@
 ##@ desktop environments

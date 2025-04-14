@@ -1,0 +1,2 @@
+# name; repository; arch; dependencies;
+etcher;balena-io/etcher;x64;libfuse2t64;

@@ -1,6 +1,0 @@
-#AlphabeticalAppGrid@stuarthayhurst
-tactile@lundal.io
-#appindicatorsupport@rgcjonas.gmail.com
-trayIconsReloaded@selfmade.pl
-monitor@astraext.github.io
-vertical-workspaces@G-dH.github.com

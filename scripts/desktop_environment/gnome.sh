@@ -7,7 +7,7 @@ gnome_setup() {
 }
 
 gnome_extensions() {
-    EXT_LIST="${RESOURCES}/gnome/extensions.txt"
+    EXT_LIST="${RESOURCES}/gnome/extensions.list"
 
     cat $EXT_LIST | while read i || [[ -n $i ]]; do
         busctl --user call org.gnome.Shell.Extensions /org/gnome/Shell/Extensions org.gnome.Shell.Extensions InstallRemoteExtension s ${i} &> /dev/null || true
@@ -15,7 +15,7 @@ gnome_extensions() {
 }
 
 gnome_sets() {
-    SET_LIST="${RESOURCES}/gnome/sets.txt"
+    SET_LIST="${RESOURCES}/gnome/sets.list"
 
     while read set; do
         cmd="gsettings set $set"
@@ -26,7 +26,7 @@ gnome_sets() {
 gnome_shortcuts() {
     set -e
 
-    STC_LIST="${RESOURCES}/gnome/shortcuts.txt"
+    STC_LIST="${RESOURCES}/gnome/shortcuts.list"
 
     # create shortcuts array
     n=0

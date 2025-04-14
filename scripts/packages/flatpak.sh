@@ -2,12 +2,12 @@
 
 flatpak_packages() {
     flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-    flatpak install --user flathub -y $(grep -vE "^\s*#" ${RESOURCES}/flatpak/flatpaks.txt  | tr "\n" " ")
+    flatpak install --user flathub -y $(grep -vE "^\s*#" ${RESOURCES}/flatpak/flatpaks.list  | tr "\n" " ")
 }
 
 flatpak_setup() {
     # setup filesystem
-    OVERRIDE_FILE="${RESOURCES}/flatpak/override.txt"
+    OVERRIDE_FILE="${RESOURCES}/flatpak/override.csv"
 
     while read -r OVR; do
         OPTION=''
