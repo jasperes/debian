@@ -19,3 +19,7 @@
 
 # Programs
 .local/opt;reshade;kevinlekiller/reshade-steam-proton;
+
+# Desktop Environment Themes
+.themes;Dracula;dracula/gtk;
+.icons;Dracula;m4thewz/dracula-icons;
