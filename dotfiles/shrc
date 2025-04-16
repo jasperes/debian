@@ -24,9 +24,10 @@ alias sudo="sudo env PATH=$PATH "
 
 # update all
 upall() {
+    (cd ~/Sources/jasperes/debian && make git/update) &&
     rcup -v &&
-    omz update &&
-    zplug update &&
+    ~/.oh-my-zsh/tools/upgrade.sh && #omz update --unattended &&
+    oh-my-posh upgrade &&
     mise self-update -y &&
     flatpak update && flatpak uninstall --unused &&
     sudo apt update && sudo apt upgrade && sudo apt autoremove &&

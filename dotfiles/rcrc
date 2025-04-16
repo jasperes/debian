@@ -11,4 +11,3 @@
 # ###
 
 DOTFILES_DIRS="~/Sources/jasperes/debian/dotfiles"
-COPY_ALWAYS="var/app/com.valvesoftware.Steam/*"

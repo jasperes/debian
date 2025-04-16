@@ -23,3 +23,6 @@
 # Desktop Environment Themes
 .themes;Dracula;dracula/gtk;
 .icons;Dracula;m4thewz/dracula-icons;
+
+# Gnome Extensions
+.local/opt;hanabi;jeffshee/gnome-ext-hanabi;
