@@ -1,5 +1,8 @@
 # option; value; app;
 
+# Mise-en-Place
+filesystem;~/.local/share/mise/shims;
+
 # Dracula Theme
 filesystem;~/.themes/Dracula;
 filesystem;~/.icons/Dracula;

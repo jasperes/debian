@@ -27,13 +27,6 @@ nethogs
 iotop
 steam-devices
 
-# machines
-#containerd
-virt-manager
-qemu-system
-libvirt0
-bridge-utils
-
 # zippers
 7zip
 p7zip-full

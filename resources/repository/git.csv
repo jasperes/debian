@@ -7,6 +7,7 @@
 .oh-my-zsh/custom/plugins;zsh-history-substring-search;zsh-users/zsh-history-substring-search;
 .oh-my-zsh/custom/plugins;zsh-syntax-highlighting;zsh-users/zsh-syntax-highlighting;
 .oh-my-zsh/custom/plugins;autoupdate;TamCore/autoupdate-oh-my-zsh-plugins;
+.oh-my-zsh/custom/plugins;zsh-mise;wintermi/zsh-mise;
 
 # Oh My ZSH - Themes
 .oh-my-zsh/themes;dracula;dracula/zsh;
@@ -23,6 +24,7 @@
 # Desktop Environment Themes
 .themes;Dracula;dracula/gtk;
 .icons;Dracula;m4thewz/dracula-icons;
+Pictures/Wallpapers;Dracula;dracula/wallpaper;
 
 # Gnome Extensions
 .local/opt;hanabi;jeffshee/gnome-ext-hanabi;

@@ -11,3 +11,4 @@
 # ###
 
 DOTFILES_DIRS="~/Sources/jasperes/debian/dotfiles"
+COPY_ALWAYS="config/MangoHud/*"

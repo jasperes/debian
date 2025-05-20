@@ -54,7 +54,15 @@
     "tmux": {
       "path": "/usr/bin/flatpak-spawn",
       "args": ["--host", "--env=TERM=xterm-256color", "tmux"]
-    }
+    },
+    "powershell": {
+      "path": "powershell",
+      "args": []
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "args": []
+    },
   },
   "telemetry.telemetryLevel": "off",
   "code-runner.enableAppInsights": false,
@@ -69,6 +77,10 @@
   "github.copilot.chat.startDebugging.enabled": false,
   "chat.commandCenter.enabled": false,
   "chat.agent.enabled": false,
-  "mise.binPath": "/home/jasperes/.local/bin/mise",
   "terminal.external.linuxExec": "kitty",
+  "vs-kubernetes": {
+    "vscode-kubernetes.kubectl-path-linux": "/home/jasperes/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.helm-path-linux": "/home/jasperes/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.minikube-path-linux": "/home/jasperes/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
 }

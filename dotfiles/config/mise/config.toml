@@ -1,7 +1,18 @@
 [tools]
-"asdf:nerdctl" = "latest"
-"asdf:powershell-core" = "latest"
 "asdf:usage" = "latest"
-"core:node" = "20"
-"core:python" = "3.13"
+
+node = "22"
 "npm:yarn" = "latest"
+
+python = "3.13"
+pipx = "latest"
+"pipx:ansible" = "latest"
+
+"aqua:terraform" = "latest"
+"aqua:kubectl" = "latest"
+"aqua:nerdctl" = "latest"
+"asdf:powershell-core" = "latest"
+"asdf:dotnet-core" = "8"
+
+[settings]
+experimental = true
