@@ -2,11 +2,45 @@
 
 Scripts to configure Debian SID.
 
-This distro will use Flatpak and Homebrew for updated softwares.
+## Softwares
 
-Kernel, Drivers, Sudo Softwares and Core Libs will use APT to install.
+The idea is to use native packages only minimal to work,
+getting less conflicts or possible problems.
+
+I'll use Flatpak for desktop softwares, isolating libs and security.
+
+Mise to install common or daily tools.
+
+App Image and DEB files as an alternative, but last.
+
+Git repos for source projects, like plugins.
+
+Programs installed via script are specific, only when i see as best way to install.
+
+## GPU Drivers
+
+Theres is two installers for AMD and NVidia.
+
+For AMD it uses native drivers (Mesa).
+
+For NVidia it uses proprietarie drivers.
+It is difficult to install and maintain,
+i have not configured everything needed to work with it.
+
+## Desktop Environment
+
+Current i am using Gnome and configure with it in mind.
+
+## Plugins
+
+This script install and configure plugins for softwares, like VSCode, ZSH, Gnome, etc.
+
+## Dotfile
 
 Dotfiles will configure the system settings.
+Everything is installed and configured with dofile settings.
+
+To manage dotfiles i am using RCM.
 
 ## Requirements
 
@@ -16,7 +50,9 @@ Install make
 apt install make
 ```
 
-## Usage
+## Manual Usage
+
+Run
 
 ```sh
 make [options...]
@@ -27,6 +63,10 @@ For more help:
 ```sh
 make help
 ```
+
+## Script Usage
+
+The current setup is installed with `install.sh` script.
 
 ## Manual Setups
 
