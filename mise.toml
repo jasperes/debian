@@ -1,0 +1,6 @@
+[tools]
+python = "3.13"
+"pipx:pre-commit" = "latest"
+
+[hooks]
+postinstall = 'pre-commit install'

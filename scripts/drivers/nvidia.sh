@@ -7,28 +7,28 @@ nvidia_prepare() {
     [[ "$EUID" -ne 0 ]] && echo "Please run as root" && exit 1
     [[ ! -f "$NVIDIA_INSTALLER" ]] && echo "Incorrect NVidia installer path" && exit 1
 
-	# login as root
-	sudo su
+    # login as root
+    sudo su
 
-	# add 32bit
-	dpkg --add-architecture i386
-	apt update
+    # add 32bit
+    dpkg --add-architecture i386
+    apt update
 
-	# install dependencies
-	apt install \
-		linux-headers-amd64 \
-		build-essential \
-		libglvnd-dev \
-		pkg-config \
-		libc6:i386 \
-	;
+    # install dependencies
+    apt install \
+        linux-headers-amd64 \
+        build-essential \
+        libglvnd-dev \
+        pkg-config \
+        libc6:i386 \
+    ;
 
-	# first install driver nvidia: remove nouveau
-	chmod +x "$NVIDIA_INSTALLER"
-	$NVIDIA_INSTALLER
+    # first install driver nvidia: remove nouveau
+    chmod +x "$NVIDIA_INSTALLER"
+    $NVIDIA_INSTALLER
 
-	# restart
-	reboot
+    # restart
+    reboot
 }
 
 ### STEP 2: install ###
@@ -38,17 +38,17 @@ nvidia_installer() {
     [[ "$EUID" -ne 0 ]] && echo "Please run as root" && exit 1
     [[ ! -f "$NVIDIA_INSTALLER" ]] && echo "Incorrect NVidia installer path" && exit 1
 
-	# second install driver nvidia: install
-	chmod +x "$NVIDIA_INSTALLER"
-	$NVIDIA_INSTALLER
+    # second install driver nvidia: install
+    chmod +x "$NVIDIA_INSTALLER"
+    $NVIDIA_INSTALLER
 
-	# restart
-	reboot
+    # restart
+    reboot
 }
 
 ### STEP 3: post-install ###
 nvidia_setup() {
-	(
+    (
         # login as root
         sudo su
 
@@ -65,6 +65,6 @@ nvidia_setup() {
     # update xconfig to use prime
     [[ "$NVIDIA_PRIME" == "true" ]] && sudo nvidia-xconfig --prime
 
-	# restart
-	sudo reboot
+    # restart
+    sudo reboot
 }

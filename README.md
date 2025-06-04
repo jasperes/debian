@@ -2,49 +2,45 @@
 
 Scripts to configure Debian SID.
 
-## Softwares
+## Software
 
-The idea is to use native packages only minimal to work,
-getting less conflicts or possible problems.
+The strategy is to:
 
-I'll use Flatpak for desktop softwares, isolating libs and security.
-
-Mise to install common or daily tools.
-
-App Image and DEB files as an alternative, but last.
-
-Git repos for source projects, like plugins.
-
-Programs installed via script are specific, only when i see as best way to install.
+- Use native packages minimally for core functionality to reduce conflicts
+- Install desktop software via Flatpak for library isolation and security
+- Manage common/daily tools using mise
+- Use AppImage and DEB files as last-resort alternatives
+- Source plugins directly from Git repositories
+- Install programs via script only when it's the optimal method
 
 ## GPU Drivers
 
-Theres is two installers for AMD and NVidia.
+Separate installers are provided for AMD and NVIDIA:
 
-For AMD it uses native drivers (Mesa).
-
-For NVidia it uses proprietarie drivers.
-It is difficult to install and maintain,
-i have not configured everything needed to work with it.
+- **AMD**: Uses native Mesa drivers
+- **NVIDIA**: Uses proprietary drivers
+  *(Note: These are complex to install/maintain; full configuration not yet implemented)*
 
 ## Desktop Environment
 
-Current i am using Gnome and configure with it in mind.
+Currently configured for GNOME with environment-specific settings.
 
 ## Plugins
 
-This script install and configure plugins for softwares, like VSCode, ZSH, Gnome, etc.
+Script installs/configures plugins for:
 
-## Dotfile
+- VS Code
+- Zsh
+- GNOME extensions
+- Other tools
 
-Dotfiles will configure the system settings.
-Everything is installed and configured with dofile settings.
+## Dotfiles
 
-To manage dotfiles i am using RCM.
+System settings are managed entirely through dotfiles, installed and configured using RCM.
 
 ## Requirements
 
-Install make
+Install `make`:
 
 ```sh
 apt install make
@@ -52,13 +48,13 @@ apt install make
 
 ## Manual Usage
 
-Run
+Execute:
 
 ```sh
 make [options...]
 ```
 
-For more help:
+View help:
 
 ```sh
 make help
@@ -66,30 +62,30 @@ make help
 
 ## Script Usage
 
-The current setup is installed with `install.sh` script.
+The setup can be installed via `install.sh`.
 
-## Manual Setups
+## Manual Post-Installation Steps
 
-Post instalation, somethings must be configured manually.
+### GNOME Settings
 
-### Gnome Settings
+- Keyboard configuration
+- Monitor arrangement
+- Wallpaper selection
+- Power saving preferences
+- User avatar setup
 
-- keyboard
-- monitor
-- wallpaper
-- power saving
-- user avatar
+### GNOME Login (GDM)
 
-### Gnome Login (GDM)
+```sh
+nano /etc/gdm3/greeter.dconf-defaults
+dpkg-reconfigure gdm3
+```
 
-- nano /etc/gdm3/greeter.dconf-defaults
-- dpkg-reconfigure gdm3
+### GNOME Extensions
 
-### Gnome Extensions
+- Open GNOME Tweaks
+- Configure extensions
 
-- open tweaks
-- edit extensions
+### Software Management
 
-### Softwares
-
-- Disable auto update system
+- Disable automatic system updates

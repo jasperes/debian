@@ -7,7 +7,6 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        // This line should be in italic.
         "scope": [
           "comment.line"
         ],
@@ -16,7 +15,6 @@
         }
       },
       {
-        /* This line should be in bold. */
         "scope": [
           "comment.block"
         ],
@@ -25,7 +23,6 @@
         }
       },
       {
-        /** This line should be in italic bold. */
         "scope": [
           "comment.block.documentation"
         ],
@@ -62,7 +59,7 @@
     "pwsh": {
       "path": "pwsh",
       "args": []
-    },
+    }
   },
   "telemetry.telemetryLevel": "off",
   "code-runner.enableAppInsights": false,
@@ -82,5 +79,5 @@
     "vscode-kubernetes.kubectl-path-linux": "/home/jasperes/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/kubectl/kubectl",
     "vscode-kubernetes.helm-path-linux": "/home/jasperes/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
     "vscode-kubernetes.minikube-path-linux": "/home/jasperes/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
-  },
+  }
 }
