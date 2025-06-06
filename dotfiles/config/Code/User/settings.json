@@ -79,5 +79,8 @@
     "vscode-kubernetes.kubectl-path-linux": "/home/jasperes/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/kubectl/kubectl",
     "vscode-kubernetes.helm-path-linux": "/home/jasperes/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm",
     "vscode-kubernetes.minikube-path-linux": "/home/jasperes/.var/app/com.visualstudio.code/.local/state/vs-kubernetes/tools/minikube/linux-amd64/minikube"
-  }
+  },
+  "workbench.startupEditor": "none",
+  "python.venvPath": "/home/jasperes/.cache/pypoetry/virtualenvs",
+  "mise.binPath": "/home/jasperes/.local/bin/mise"
 }

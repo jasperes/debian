@@ -8,11 +8,12 @@ python = "3.13"
 pipx = "latest"
 "pipx:ansible" = "latest"
 
-"aqua:terraform" = "latest"
-"aqua:kubectl" = "latest"
-"aqua:nerdctl" = "latest"
+# "aqua:terraform" = "latest"
 "asdf:powershell-core" = "latest"
 "asdf:dotnet-core" = "8"
+"asdf:kubectl" = "latest"
+"asdf:nerdctl" = "latest"
+terraform = "latest"
 
 [settings]
 experimental = true
