@@ -126,9 +126,9 @@ themes/dracula: ##@ install dracula theme
 ##@ misc
 ##@
 
-misc/cedilla: ##@ configure cedilla
-	@source $(SCRIPTS)/misc/cedilla.sh
-	cedilla_setup
+misc/ssh: ##@ generate ssh keys
+	@source $(SCRIPTS)/misc/ssh.sh
+	ssh_generate
 
 # https://gist.github.com/prwhite/8168133
 help: ##@ show this help

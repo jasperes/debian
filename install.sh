@@ -10,7 +10,7 @@ make amd/installer
 make swapfile/setup
 make shell/setup
 
-make rcm/install
+make rcm/setup
 make themes/dracula
 
 make deb/packages
@@ -27,7 +27,8 @@ make gnome/extensions
 make gnome/sets
 make gnome/shortcuts
 
-make misc/cedilla
+make misc/ssh
 
 make mise/packages
 make vscode/extensions
+make powershell/modules

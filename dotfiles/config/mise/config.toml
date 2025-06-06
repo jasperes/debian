@@ -13,7 +13,7 @@ pipx = "latest"
 "asdf:dotnet-core" = "8"
 "asdf:kubectl" = "latest"
 "asdf:nerdctl" = "latest"
-terraform = "latest"
+"aqua:terraform" = "latest"
 
 [settings]
 experimental = true
