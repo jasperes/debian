@@ -1,19 +1,17 @@
 [tools]
-"asdf:usage" = "latest"
-
-node = "22"
-"npm:yarn" = "latest"
-
-python = "3.13"
-pipx = "latest"
-"pipx:ansible" = "latest"
-
-# "aqua:terraform" = "latest"
-"asdf:powershell-core" = "latest"
+"aqua:terraform" = "latest"
 "asdf:dotnet-core" = "8"
+"asdf:k9s" = "latest"
 "asdf:kubectl" = "latest"
 "asdf:nerdctl" = "latest"
-"aqua:terraform" = "latest"
+"asdf:powershell-core" = "7"
+"asdf:usage" = "latest"
+node = "22"
+"npm:yarn" = "latest"
+pipx = "latest"
+"pipx:ansible" = "latest"
+python = "3.13"
 
 [settings]
+fetch_remote_versions_timeout = "30s"
 experimental = true

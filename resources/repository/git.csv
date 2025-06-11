@@ -25,6 +25,3 @@
 .themes;Dracula;dracula/gtk;
 .icons;Dracula;m4thewz/dracula-icons;
 Pictures/Wallpapers;Dracula;dracula/wallpaper;
-
-# Gnome Extensions
-.local/opt;hanabi;jeffshee/gnome-ext-hanabi;

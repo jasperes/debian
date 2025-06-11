@@ -20,6 +20,16 @@ dracula_installer() {
     rm -rf ~/.local/share/plasma/look-and-feel/Dracula-kde5 || true
     rm -rf ~/.local/share/plasma/look-and-feel/Dracula-kde6 || true
 
+    mkdir -p ~/.local/share/icons/ || true
+    mkdir -p ~/.config/gtk-2.0/ || true
+    mkdir -p ~/.config/gtk-3.0/ || true
+    mkdir -p ~/.config/gtk-3.20/ || true
+    mkdir -p ~/.config/gtk-4.0/ || true
+    mkdir -p ~/.local/share/aurorae/themes/ || true
+    mkdir -p ~/.local/share/color-schemes/ || true
+    mkdir -p ~/.local/share/plasma/desktoptheme/ || true
+    mkdir -p ~/.local/share/plasma/look-and-feel/ || true
+
     ln -s ~/.themes/Dracula/kde/cursors/Dracula-cursors ~/.icons/Dracula-cursors || true
     ln -s ~/.icons/Dracula ~/.local/share/icons/Dracula || true
     ln -s ~/.themes/Dracula/kde/cursors/Dracula-cursors ~/.local/share/icons/Dracula-cursors || true

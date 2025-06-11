@@ -1,4 +1,6 @@
 # libs
+curl
+wget
 build-essential
 pkg-config
 ffmpeg
@@ -10,6 +12,9 @@ gnome-shell-extensions
 gnome-software-plugin-flatpak
 kitty
 gparted
+
+# services
+containerd
 
 # utils
 git
