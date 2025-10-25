@@ -19,7 +19,6 @@ Separate installers are provided for AMD and NVIDIA:
 
 - **AMD**: Uses native Mesa drivers
 - **NVIDIA**: Uses proprietary drivers
-  *(Note: These are complex to install/maintain; full configuration not yet implemented)*
 
 ## Desktop Environment
 
@@ -38,26 +37,18 @@ Script installs/configures plugins for:
 
 System settings are managed entirely through dotfiles, installed and configured using RCM.
 
-## Requirements
-
-Install `make`:
-
-```sh
-apt install make
-```
-
 ## Manual Usage
 
 Execute:
 
 ```sh
-make [options...]
+make run
 ```
 
-View help:
+or
 
 ```sh
-make help
+mise tasks ls
 ```
 
 ## Script Usage
