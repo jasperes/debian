@@ -82,5 +82,11 @@
   },
   "workbench.startupEditor": "none",
   "python.venvPath": "/home/jasperes/.cache/pypoetry/virtualenvs",
-  "mise.binPath": "/home/jasperes/.local/bin/mise"
+  "mise.binPath": "/home/jasperes/.local/bin/mise",
+  "azureTerraform.survey": {
+    "surveyPromptDate": "2025-08-27T23:43:42.896Z",
+    "surveyPromptIgnoredCount": 2
+  },
+  "@azure.argTenant": "",
+  "github.copilot.chat.codeGeneration.instructions": []
 }

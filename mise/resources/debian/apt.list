@@ -1,0 +1,49 @@
+# libs
+curl
+wget
+build-essential
+pkg-config
+ffmpeg
+ffmpegthumbnailer
+
+# softwares
+flatpak
+gnome-shell-extensions
+gnome-software-plugin-flatpak
+kitty
+gparted
+
+# utils
+git
+tmux
+zsh
+rcm
+tree
+expect
+sshpass
+neovim
+fastfetch
+btop
+nvtop
+nethogs
+iotop
+steam-devices
+
+# zippers
+7zip
+p7zip-full
+bzip2
+gvfs
+arj
+lzip
+lzma
+lzop
+ncompress
+rzip
+squashfs-tools
+unace
+unalz
+unar
+xz-utils
+unzip
+zip

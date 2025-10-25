@@ -1,0 +1,67 @@
+# flatpak
+com.github.tchx84.Flatseal
+
+# launcher
+com.usebottles.bottles
+#net.lutris.Lutris
+#com.heroicgameslauncher.hgl
+com.valvesoftware.Steam
+
+# steam library
+com.github.Matoking.protontricks
+org.freedesktop.Platform.VulkanLayer.MangoHud
+org.freedesktop.Platform.VulkanLayer.gamescope
+org.freedesktop.Platform.VulkanLayer.vkBasalt
+com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+#com.valvesoftware.Steam.CompatibilityTool.Boxtron
+
+# emulator
+net.rpcs3.RPCS3
+net.shadps4.shadPS4
+
+# games
+io.mrarm.mcpelauncher
+
+# share
+com.parsecgaming.parsec
+
+# image editors
+org.gimp.GIMP
+org.kde.krita
+org.inkscape.Inkscape
+
+# media viewer
+flathub org.gnome.gThumb
+org.videolan.VLC
+
+# office
+org.libreoffice.LibreOffice
+md.obsidian.Obsidian
+
+# infra
+io.missioncenter.MissionCenter
+org.virt_manager.virt-manager
+org.virt_manager.virt_manager.Extension.Qemu
+
+# ide
+com.jetbrains.IntelliJ-IDEA-Community
+io.dbeaver.DBeaverCommunity
+com.usebruno.Bruno
+com.visualstudio.code
+
+# online
+com.discordapp.Discord
+com.spotify.Client
+
+# browser
+com.google.Chrome
+org.mozilla.firefox
+io.gitlab.librewolf-community
+
+# downloader
+org.jdownloader.JDownloader
+org.qbittorrent.qBittorrent
+
+# protocol
+#org.filezillaproject.Filezilla
+org.remmina.Remmina

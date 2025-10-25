@@ -1,0 +1,70 @@
+min_version = "2025.10.16"
+
+[tools]
+pre-commit = "4.2.0"
+
+[settings]
+jobs = 1
+
+[hooks]
+postinstall = 'pre-commit install'
+
+[env]
+USERNAME = "jasperes"
+DEBIAN_NAME = "trixie"
+
+SHELL_NAME = "zsh"
+SHELL_BIN = "/bin/zsh"
+SHELL_RC = "~/.zshrc"
+
+RESOURCES = "./mise/resources"
+TEMP = "./temp"
+
+RC_FOLDER = "{{env.HOME}}/Sources/jasperes/debian/dotfiles"
+APPIMAGE_FOLDER = "{{env.HOME}}/.local/appimage"
+
+#NVIDIA_INSTALLER = "./nvidia/NVIDIA-Linux-x86_64-550.144.03.run"
+
+SWAP_FILE = "/swapfile"
+SWAP_SIZE = "16384"
+
+[tasks.install]
+hide = true
+depends = [
+    "packages:apt",
+    "drivers:amd",
+    "core:swapfile",
+    "core:shell",
+    "misc:ssh",
+    "packages:script",
+    "packages:git:clone",
+    "dotfiles:setup",
+    "themes:dracula",
+    "packages:deb:git",
+    "packages:deb:link",
+    "packages:flatpak:pkg",
+    "packages:flatpak:setup",
+    "packages:appimage:git",
+    "packages:appimage:link",
+    "desktopui:gnome:extensions",
+    "desktopui:gnome:sets",
+    "desktopui:gnome:shortcuts",
+    "softwares:mise",
+    "softwares:vscode",
+    "softwares:pwsh",
+]
+
+[tasks.update]
+run = [
+    "mise run packages:git:update",
+    "rcup -v",
+    "~/.oh-my-zsh/tools/upgrade.sh",
+    "oh-my-posh upgrade",
+    "mise self-update -y",
+    "mise up",
+    "sudo apt update",
+    "sudo apt upgrade",
+    "sudo apt autoremove",
+    "flatpak update",
+    "flatpak uninstall --unused",
+]
