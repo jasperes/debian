@@ -19,6 +19,7 @@ powershell = "7"
 python = "3.13"
 terraform = "latest"
 usage = "latest"
+uv = "latest"
 
 [settings]
 experimental = true
